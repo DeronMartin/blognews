@@ -1,0 +1,9 @@
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/nav.ejs") %>
+
+<body>
+    <% articles.forEach((article) => { %>
+        <h1><%= article.title %></h1>
+        <h3><%= article.description %></h3>
+    <% }); %>
+</body>

@@ -1,0 +1,12 @@
+<%- include("./partials/head.ejs") %>
+<%- include("./partials/nav.ejs") %>
+
+<body>
+    <h3>Sign Up</h3>
+    <form action="/adduser" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email ID" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
